@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eiffel2"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="206dp"
+            android:layout_height="214dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="60dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_corners4"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/pullova2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get 15% discount on every ride"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@string/georgia"
+        android:textStyle="normal"
+        android:shadowRadius="@android:integer/config_mediumAnimTime"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="16dp"
+        android:textColor="@color/WHITE"
+        />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" you book only at PullOva"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView"
+            android:fontFamily="@string/georgia"
+            android:textStyle="normal"
+            android:shadowRadius="@android:integer/config_mediumAnimTime"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="16dp"
+            android:textColor="@color/WHITE"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use the promo code"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView2"
+            android:fontFamily="@string/georgia"
+            android:textStyle="normal"
+            android:shadowRadius="@android:integer/config_mediumAnimTime"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="16dp"
+            android:textColor="@color/WHITE"
+            />
+
+    <TextView
+        android:id="@+id/coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:text="471Y4A"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+        android:fontFamily="@string/georgia"
+        android:textColor="@color/WHITE"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/coupon"
+        android:layout_centerHorizontal="true"
+        android:text="Name: Joachim Ojiodu"
+        android:textSize="20dp"
+        android:textColor="@color/lightgrey"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:id="@+id/profile"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/profile"
+            android:layout_centerHorizontal="true"
+            android:text="Latitude :"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:autoSizeTextType="uniform"
+            android:id="@+id/lat"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/lat"
+            android:layout_centerHorizontal="true"
+            android:text="Longitude :"
+            android:textSize="18dp"
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:id="@+id/lon"
+            />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:pointerIcon="arrow"
+        android:text="maps"
+        android:fontFamily="@string/times"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners2"
+        android:layout_below="@id/lon"
+        android:id="@+id/bt1"
+        />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

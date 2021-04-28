@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Countries:"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv1"
+            />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/country"
+            android:layout_toRightOf="@id/tv1"
+            android:background="@drawable/rounded_corners2"
+            android:hint="country"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="States :"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/country"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv2"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/states"
+            android:layout_toRightOf="@id/tv2"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded_corners2"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Enter Location"
+            android:id="@+id/location"
+            android:layout_below="@id/states"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_corners2"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/location"
+            android:layout_below="@id/states"
+            android:layout_marginTop="59dp"
+            android:textColor="@color/WHITE"
+            android:background="@drawable/rounded_corners3"
+            android:layout_marginLeft="20dp"
+            android:text="Submit"
+            android:fontFamily="@string/times"
+            />
+
+        <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.googl" />-->
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
