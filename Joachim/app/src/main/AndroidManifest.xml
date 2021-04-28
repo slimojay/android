@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.joachim">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="@string/app_name"
+        android:icon="@drawable/remotecourt"
+        android:roundIcon="@drawable/remotecourt"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MeetingActivity"
+            android:label="@string/title_activity_meeting"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PickerClass" />
+        <activity
+            android:name=".JoinSession"
+            android:label="@string/title_activity_join_session"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CaseList"
+            android:label="@string/title_activity_case_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AsyncActivity"
+            android:label="@string/title_activity_async"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CauseList"
+            android:label="@string/title_activity_cause_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginfileActivity"
+            android:label="@string/title_activity_loginfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondClass"
+            android:label=" ">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Remote Court</string>
+    <string name="btnvalue">Show Value</string>
+    <string name="copyright">copyright 2021</string>
+    <string name="company">GLOBAL T and T SOLUTIONS</string>
+
+    <string name="title_activity_login">Registrar Login Page</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_loginfile">Login Page</string>
+    <string name="title_activity_cause_list">CauseList</string>
+    <string name="title_activity_async">AsyncActivity</string>
+    <string name="times">times new roman</string>
+    <string name="georgia">Georgia</string>
+    <string name="title_activity_case_list">CaseList</string>
+    <string name="title_activity_join_session">JoinSession</string>
+    <string name="wrap">wrap_content</string>
+    <string name="title_activity_meeting">MeetingActivity</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaseList">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:visibility="gone"
+    >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/WHITE"
+            app:popupTheme="@style/AppTheme.NoActionBar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GOLD"
+        android:padding="10dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/rl"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remote Court Scheduling App"
+            android:textSize="21dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="times new roman"
+            android:textColor="@color/WHITE"
+            android:id="@+id/tv"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/GOLD"
+            android:text="Upcoming "
+            android:id="@+id/upcomingbtn"
+            android:background="@color/WHITE"
+            android:fontFamily="@string/times"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/upcomingbtn"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/orange"
+            android:text="Previous"
+            android:id="@+id/previousbtn"
+            android:fontFamily="@string/times"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/previousbtn"
+            android:hint="Charge no"
+            android:id="@+id/csn"
+            android:backgroundTint="@color/WHITE"
+            android:drawableBottom="@color/WHITE"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upcomingbtn"
+            android:text="Logged-in as : "
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/who"
+            android:fontFamily="@string/times"
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <include layout="@layout/content_case_list" />
+
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="5dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="@color/coral"
+        android:outlineAmbientShadowColor="@color/BLACK"
+        android:backgroundTint="@color/WHITE"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
